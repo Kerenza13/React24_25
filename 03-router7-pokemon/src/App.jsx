@@ -1,12 +1,16 @@
 import React from "react";
 import { RouterProvider } from "react-router-dom";
-import { router } from "./routes/routes";
-
+import { PokemonProvider } from "./context/PokemonContext";
+import { router } from "./routes/Router";
 
 const App = () => {
-// Cuando usemos react router dom, App solo debería tener el RouterProvider y el resto de cosas deberían estar en RootLayout
- return(
-    <RouterProvider router={router}/>
- );
+  // cuando usemos REACT ROUTER DOM App sólo debería tener el ROUTER PROVIDER
+  // Y el resto de cosas deberían de estar en RootLayout
+  return (
+    <PokemonProvider>
+      <RouterProvider router={router} />
+    </PokemonProvider>
+  );
 };
+
 export default App;
