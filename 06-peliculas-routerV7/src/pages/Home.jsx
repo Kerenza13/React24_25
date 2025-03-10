@@ -40,7 +40,7 @@ const Home = () => {
           Aquí podrás encontrar las películas más populares del momento
         </p>
       </header>
-      {/* sección de las películas */}
+      {/* /* sección de las películas */}
       <section>
         <h2 className="text-2xl font-bold text-sky-900 mb-8">
           Películas populares
