@@ -1,0 +1,22 @@
+{
+  "name": "event-management-backend",
+  "version": "1.0.0",
+  "description": "Backend for managing events with CRUD operations using Express.js and Mongoose.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "event-management-backend": "file:",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
