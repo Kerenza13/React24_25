@@ -1,8 +1,18 @@
 import { RouterProvider } from "react-router-dom";
-import { router } from "./router/index";
+import { router } from "./router";
+import { AuthProvider } from "./context/AuthContext";
+import { CartProvider } from "./context/CartContext";
 
-const App = () => {
-  return <RouterProvider router={router} />;
-};
+function App() {
+  return (
+    <>
+      <AuthProvider>
+        <CartProvider>
+          <RouterProvider router={router} />
+        </CartProvider>
+      </AuthProvider>
+    </>
+  );
+}
 
 export default App;
